@@ -7,7 +7,7 @@
 雖然一開始OWASP Top 10計劃既目的原本只係去提升開發人員同管理層既意識，不過而家已經變咗一個實際上既應用程式保安標準喇。
 Although the original goal of the OWASP Top 10 project was simply to raise awareness amongst developers and managers, it has become the de facto application security standard. 
 
-喺呢個版本，問題同建議都係寫得簡潔同埋測試得到，嚟幫助唔同嘅應用程式保安規劃可以採用到OWASP Top 10。如果要用到真正既標準，我地鼓勵大型同卓越嘅機構去採用[OWASP 應用程式驗證標準(ASVS)](https://www.owasp.org/index.php/ASVS) ，不過係大部分情況，OWASP Top 10已經係應用程式保安旅程既好開始。
+喺呢個發行版本，問題同建議都係寫得簡潔同埋測試得到，嚟幫助唔同嘅應用程式保安規劃可以採用到OWASP Top 10。如果要用到真正既標準，我地鼓勵大型同卓越嘅機構去採用[OWASP 應用程式驗證標準(ASVS)](https://www.owasp.org/index.php/ASVS) ，不過係大部分情況，OWASP Top 10已經係應用程式保安旅程既好開始。
 
 我哋寫咗一系列提議既進一步措施畀唔同嘅OWASP Top 10用家，包括有「開發者嘅下一步」，「保安測試員嘅下一步」，適合首席資訊同保安官（CIO/CISO）嘅「機構嘅下一步」，同埋適合任何負責應用程式生命週期既人嘅「應用程式經理嘅下一步」。
 

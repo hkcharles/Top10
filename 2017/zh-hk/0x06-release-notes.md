@@ -1,30 +1,30 @@
-# RN Release Notes
+# RN 發行說明
 
-## What changed from 2013 to 2017?
+## 由2013到2017有乜轉變？
 
-Change has accelerated over the last four years, and the OWASP Top 10 needed to change. We've completely refactored the OWASP Top 10, revamped the methodology, utilized a new data call process, worked with the community, re-ordered our risks, re-written each risk from the ground up, and added references to frameworks and languages that are now commonly used.
+過去四年轉變快咗好多，所以OWASP Top 10都要改變。我地重構咗成個OWASP Top 10，成個方法翻新咗，用咗一個新嘅數據召集程序，同社群一齊合作，重新將風險排序，將每一個風險都由頭寫過晒，仲加咗而家常用嘅框架同語言既參考。
 
-Over the last few years, the fundamental technology and architecture of applications has changed significantly:
+過去幾年，應用程式嘅基礎科技同架構都變得幾顯著：
 
-* Microservices written in node.js and Spring Boot are replacing traditional monolithic applications. Microservices come with their own security challenges including establishing trust between microservices, containers, secret management, etc. Old code never expected to be accessible from the Internet is now sitting behind an API or RESTful web service to be consumed by Single Page Applications (SPAs) and mobile applications. Architectural assumptions by the code, such as trusted callers, are no longer valid.
-* Single page applications, written in JavaScript frameworks such as Angular and React, allow the creation of highly modular feature-rich front ends. Client-side functionality that has traditionally been delivered server-side brings its own security challenges.
-* JavaScript is now the primary language of the web with node.js running server side and modern web frameworks such as Bootstrap, Electron, Angular, and React running on the client.
+* 以node.js撰寫嘅微服務(Microservices)同埋Spring Boot都取代緊傳統單一架構既應用程式。微服務有佢地自己既保安難題，包括建立微服務，軟件容器「箱」(譯按： Docker嘅container即係一個「貨櫃箱」)，秘密管理，等等之間既信任。以往唔預計會係互聯網直接掂到既舊程式而家就放喺應用程式接口或者RESTful網站服務，由單頁應用程式（SPAs)同手機應用程式（Mobile Applications)去使用。編程架構上既假設，例如只有信任既使用者(caller)，以經唔再啱啦。
+* 以JavaScript框架例如Angular同React所撰寫嘅單頁應用程式，容許非常模組化，多功能既網站前端（Front-end)出現。傳統上以伺服器端提供嘅服務，而家喺客戶端提供，產生咗新嘅保安挑戰。
+* JavaScript成為咗以node.js運行伺服器端，同埋係客戶端運行嘅現代網站框架例如Bootstrap, Electron, Angular, 同React嘅主要語言。
 
-## New issues, supported by data
+## 由數據支撐嘅新問題
 
-* **A4:2017-XML External Entities (XXE)** is a new category primarily supported by source code analysis security testing tools ([SAST](https://www.owasp.org/index.php/Source_Code_Analysis_Tools)) data sets.
+* **A4:2017-XML External Entities (XXE)** 係一個主要由源始碼分析保安測試工具(source code analysis security testing tools) ([SAST](https://www.owasp.org/index.php/Source_Code_Analysis_Tools)) 嘅數據所支撐嘅新嘅類別.
 
-## New issues, supported by the community
+## 由社群支撐嘅新問題
 
-We asked the community to provide insight into two forward looking weakness categories. After over 500 peer submissions, and removing issues that were already supported by data (such as Sensitive Data Exposure and XXE), the two new issues are: 
+我哋請求社群為兩個前瞻嘅弱點類別提供獨具慧眼嘅意見。喺收到超過五百個意見同移除一啲已經有數據支撐嘅問題之後（例如敏感資料洩漏同XXE），兩個新嘅問題係：
 
-* **A8:2017-Insecure Deserialization**, which permits remote code execution or sensitive object manipulation on affected platforms.
-* **A10:2017-Insufficient Logging and Monitoring**, the lack of which can prevent or significantly delay malicious activity and breach detection, incident response, and digital forensics.
+* **A8:2017-唔安全既deserialization**，喺受影響嘅平台容許遠端執行程式碼（remote code execution）或者操控敏感嘅物件(sensitive object manipulation）
+* **A10:2017-唔足夠嘅記錄同監測**, 對惡意活動同突破防線嘅偵測，事故應變，同埋數碼鑑證做成阻礙或顯著咁延遲
 
-## Merged or retired, but not forgotten
+## 合併或者退役，不過唔會唔記得
 
-* **A4-Insecure Direct Object References** and **A7-Missing Function Level Access Control** merged into **A5:2017-Broken Access Control**.
-* **A8-Cross-Site Request Forgery (CSRF)**, as many frameworks include [CSRF defenses](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)), it was found in only 5% of applications.
-* **A10-Unvalidated Redirects and Forwards**, while found in approximately in 8% of applications, it was edged out overall by XXE.
+* **A4-對物件有唔安全嘅直接引用(Insecure Direct Object References)** 同 **A7-欠缺功能層面嘅存取控制(Missing Function Level Access Control)** 合併成為 **A5:2017-壞咗嘅存取控制**.
+* **A8-偽做跨網站請求(Cross-Site Request Forgery (CSRF))**, 由於好多框架都包含咗[CSRF 防衛措施](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)), 呢個風險只係5%嘅應用程式搵到。
+* **A10-未經驗證嘅引導同轉發(Unvalidated Redirects and Forwards)**, 只係喺8%嘅應用程式搵到，被XXE風險排擠出十大。
 
 ![0x06-release-notes-1](images/0x06-release-notes-1.png)
