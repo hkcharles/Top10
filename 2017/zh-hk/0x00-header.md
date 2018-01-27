@@ -2,19 +2,19 @@
 
 ## OWASP Top 10 2017
 
-The Ten Most Critical Web Application Security Risks
+十個最高危的網站應用程式保安風險
 
-November 20, 2017
+二零一七年十一月廿日
 
-### Release
+### 版本
 
-Comments requested per instructions within
+就內文指引徵求意見
 
 ![WASP Logo URL TBA](images/front-wasp.png)
 
 |  | ![Creative Commons License Logo](images/front-cc.png) |
 | -- | -- |
-| https://owasp.org | This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License |
+| https://owasp.org | 本文以 Creative Commons Attribution-ShareAlike 4.0 International License 授權|
 
 
 

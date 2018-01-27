@@ -1,20 +1,20 @@
-# Release
+# 版本
 
-## Important Notice
+## 重大注意事項
 
-### Request for Comments
+### 徵求意見
 
-This is the text version of the OWASP Top 10, and although it is useful for translators and those interested in a text version, it's not the official release, which is the PowerPoint / PDF version. 
+呢個係OWASP Top 10嘅文字版，雖然呢個版本適合翻譯人員同埋需要用文字版既人，不過呢個唔係官方版本，官方版本係用PowerPoint同PDF格式嘅。
 
-At this stage, we are asking for
+喺呢一刻，我哋徵求以下既幫助：
 
-* Translations - we have some teams working already, but do reach out to us if you can help
+* 翻譯 - 我哋已經有啲人幫緊手，不過如果你可以幫手都請你聯絡我哋
 
-We strongly urge for any corrections or issues to be logged at GitHub:
+我地強烈呼籲將任何修正同問題記錄喺GitHub度：
 
 * [https://github.com/OWASP/Top10/issues](https://github.com/OWASP/Top10/issues)
 
-Through public transparency, we provide traceability and ensure that all voices are heard during this final month before publication.
+透過公開透明嘅政策，我地確保出版前既最後呢個月可以追遡到所有野，同埋所有意見都得到重視。
 
 * Andrew van der Stock
 * Brian Glas
