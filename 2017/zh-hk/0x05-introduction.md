@@ -1,33 +1,33 @@
-# I Introduction
+# I 引言
 
-## Welcome to the OWASP Top 10 - 2017
+## 歡迎參閱OWASP Top 10 - 2017
 
-This major update adds several new issues, including two issues selected by the community - A8:2017-Insecure Deserialization and A10:2017-Insufficient Logging and Monitoring. Two key differentiators from previous OWASP Top 10 releases are the substantial community feedback and extensive data assembled from dozens of organizations, possibly the largest amount of data ever assembled in the preparation of an application security standard. This provides us with confidence that the new OWASP Top 10 addresses the most impactful application security risks currently facing organizations.
+呢個重大更新加咗幾個新問題，包括兩個由社群㨂選既問題 - A8:2017-唔安全既deserialization同埋A0:2017-唔足夠嘅記錄同監測。對比上一個版本既兩大主要分別係顯著嘅社群回響同埋整合咗由數十個機構提供嘅大量數據，可能係有以準備應用程式保安標準嚟計有最大量既數據。呢個分別令我地好有信心，新嘅OWASP Top 10應對到對機構最具影響力既應用程式保安風險。
 
-The OWASP Top 10 for 2017 is based primarily on 40+ data submissions from firms that specialize in application security and an industry survey that was completed by over 500 individuals. This data spans vulnerabilities gathered from hundreds of organizations and over 100,000 real-world applications and APIs. The Top 10 items are selected and prioritized according to this prevalence data, in combination with consensus estimates of exploitability, detectability, and impact.
+OWASP Top 10 2017年版係基於超過四十間應用程式保安專門機構提供嘅數據，以及超過五百個個別人士填寫既業界調查。呢個數據跨越逾百個機構收集返黎既漏洞，同埋超過十萬個運作緊嘅應用程式同應用程式接口(API)。十大風險既每一項都係基於呢啲數據，結合埋有幾易利用，幾易偵測，同影響力既估計既共識去挑選同排序。
 
-A primary aim of the OWASP Top 10 is to educate developers, designers, architects, managers, and organizations about the consequences of the most common and most important web application security weaknesses. The Top 10 provides basic techniques to protect against these high risk problem areas, and provides guidance on where to go from here.
+OWASP Top 10嘅其中一個主要目標係教育開發人員，設計師，架構師，管理層以及機構有關最常見同最重要嘅保安弱點可以造做嘅後果。Top 10提供基本技巧去保護呢啲高風險既問題，同埋提供下一步方向既指引。
 
-## Roadmap for future activities
+## 未來活動嘅路線圖
 
-**Don't stop at 10**. There are hundreds of issues that could affect the overall security of a web application as discussed in the [OWASP Developer's Guide](https://www.owasp.org/index.php/OWASP_Guide_Project) and the [OWASP Cheat Sheet Series](https://www.owasp.org/index.php/Category:Cheatsheets). These are essential reading for anyone developing web applications and APIs. Guidance on how to effectively find vulnerabilities in web applications and APIs is provided in the [OWASP Testing Guide](https://www.owasp.org/index.php/OWASP_Testing_Project).
+**唔好停喺Top 10**. 出面有數以百計既問題可以影響到網站應用程式整體保安，正如[OWASP開發人員指引](https://www.owasp.org/index.php/OWASP_Guide_Project) 同埋[OWASP貓紙系列](https://www.owasp.org/index.php/Category:Cheatsheets)提及到。任何人開發緊網站應用程式同應用程式接口都應該睇咗佢。而點樣可以有效咁喺網站應用程式同應用程式接口搵到漏洞，就可以係[OWASP測試指引](https://www.owasp.org/index.php/OWASP_Testing_Project)入面搵到。
 
-**Constant change**. The OWASP Top 10 will continue to change. Even without changing a single line of your application's code, you may become vulnerable as new flaws are discovered and attack methods are refined. Please review the advice at the end of the Top 10 in What's Next For Developers, Testers, Organizations and Application Managers for more information.
+**保持改變**. OWASP Top 10係會不停咁更新。即使你個應用程式一行都無改過，你都可能因為新漏洞既發現同埋攻擊技巧既改進而變成有弱點。有關嘅更多資訊，請你細閱一次位於「開發人員，測試人員，機構同埋應用程式經理嘅下一步」最底既建議。
 
-**Think positive**. When you're ready to stop chasing vulnerabilities and focus on establishing strong application security controls, the [OWASP Proactive Controls](https://www.owasp.org/index.php/OWASP_Proactive_Controls) project provides a starting point to help developers build security into their applications and the [OWASP Application Security Verification Standard (ASVS)](https://www.owasp.org/index.php/ASVS) is a guide for organizations and application reviewers on what to verify.
+**保持積極**. 當你唔駛再係咁搵晒啲漏洞出黎，可以專注係建立更強既應用程式保安嘅控制時，[OWASP主動控制](https://www.owasp.org/index.php/OWASP_Proactive_Controls)提供開發人員一個起點去將保安建立係佢地既應用程式入面，同埋[OWASP 應用程式驗證標準(ASVS)](https://www.owasp.org/index.php/ASVS) 都係一個指引畀機構同開發人員去搵可以驗證嘅地方.
 
-**Use tools wisely**. Security vulnerabilities can be quite complex and deeply buried in code. In many cases, the most cost-effective approach for finding and eliminating these weaknesses is human experts armed with advanced tools. Relying on tools alone provides a false sense of security and is not recommended.
+**善用工具**. 保安漏洞可以係幾複雜同埋收得係啲曲(code)入面好埋。好多時，最有效搵佢地出黎同消滅佢地既既方法係由專家去操作一啲先進既工具。單靠呢啲工具反而製造一個安全既幻覺，所以我哋係唔建議嘅。
 
-**Push left, right, and everywhere**. Focus on making security an integral part of your culture throughout your development organization. Find out more in the [OWASP Software Assurance Maturity Model (SAMM)](https://www.owasp.org/index.php/OWASP_SAMM_Project).
+**週圍推**. 專注令到保安成為你既開發機構入面文化既一部分。詳情參閱[OWASP軟件保障成熟度模型 (SAMM)](https://www.owasp.org/index.php/OWASP_SAMM_Project).
 
-## Attribution
+## 嗚謝
 
-We'd like to thank the organizations that contributed their vulnerability data to support the 2017 update. We received more than 40 responses to the call for data. For the first time, all the data contributed to a Top 10 release, and the full list of contributors, is publicly available. We believe this is one of the larger, more diverse collections of vulnerability data ever collected publicly.
+我哋想多謝透過提供漏洞數據去支持2017年版更新既機構。我地召集數據之後，收到超過四十個回應。呢個係第一次，公開晒一個Top 10版本既數據同埋有份貢獻同參與人士同機構既完整名錄。我地相信呢個係公開召集漏洞數據以來比較大，同多元化既彙集。
 
-As there are more contributors than space here, we have created a dedicated page to recognize the contributions made. We wish to give heartfelt thanks to these organizations for being willing to be on the front lines by publicly sharing vulnerability data from their efforts. We hope this will continue to grow and encourage more organizations to do the same and possibly be seen as one of the key milestones of evidence based security. The OWASP Top 10 would not be possible without these amazing contributions. 
+由於參與人數同機構眾多，呢度寫唔晒，我哋另外開咗一個專頁去答謝佢地嘅貢獻。我地由衷感謝佢地將自己努力得到既漏洞數據公開分享，願意企係應用程式保安既前線。我地希望呢個努力可以持續，去鼓勵同增加更多機構仿效，成為以證據為本既保安既一個發展里程碑。無佢地既驚人貢獻，OWASP Top 10根本唔可能成功。
 
-A big thank you to the more than 500 individuals who took the time to complete the industry ranked survey. Your voice helped determine two new additions to the Top 10. The additional comments, notes of encouragement, and criticisms were all appreciated. We know your time is valuable and we wanted to say thanks.
+大大感謝超過500個完成業界排名調查既個別人士。你嘅聲音幫助Top 10加添咗兩個新既風險。額外既意見，鼓勵既說話同批評我地都非常感謝。我地知道你嘅時間非常寶貴，我地真係想講聲多謝。
 
-We would like to thank those individuals who contributed significant constructive comments and time reviewing this update to the Top 10. As much as possible, we have listed them on the "Acknowledgements" page.
+我地想感謝提供大量建言見同時間去覆核校對呢個Top 10版本既人。我地儘量將佢地都列晒係「鳴謝」嗰頁。
 
-And finally, we'd like to thank in advance all the translators out there who will translate this release of the Top 10 into numerous different languages, helping to make the OWASP Top 10 more accessible to the entire planet.
+最後，我地想預先多謝所以翻譯Top 10去無數唔同語言既翻譯人員，幫助Top 10係全球更容易流通。
